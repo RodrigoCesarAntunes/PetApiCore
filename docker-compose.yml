@@ -6,7 +6,7 @@ volumes:
 services:
   db:
     image: mysql:8.0.12
-    enviroment:
+    environment:
       - MYSQL_ROOT_PASSWORD: "VetDB-435"
       - MYSQL_DATABASE: "veterinarioservice"
       - MYSQL_USER: "root"
