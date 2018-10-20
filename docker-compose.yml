@@ -6,6 +6,11 @@ volumes:
 services:
   db:
     image: mysql:8.0.12
+    enviroment:
+      - MYSQL_ROOT_PASSWORD: "VetDB-435"
+      - MYSQL_DATABASE: "veterinarioservice"
+      - MYSQL_USER: "root"
+      - MYSQL_PASSWORD: "VetDB-435"
     restart: always   
   apicorepet:
     image: ${DOCKER_REGISTRY}apicorepet
