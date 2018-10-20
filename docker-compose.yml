@@ -6,7 +6,6 @@ volumes:
 services:
   db:
     image: mysql:8.0.12
-     - datafiles:/var/lib/mysql
     restart: always   
   apicorepet:
     image: ${DOCKER_REGISTRY}apicorepet
