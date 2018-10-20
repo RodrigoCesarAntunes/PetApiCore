@@ -1,0 +1,14 @@
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\bin\Release\netcoreapp2.1\ApiCorePet.deps.json
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\bin\Release\netcoreapp2.1\ApiCorePet.runtimeconfig.json
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\bin\Release\netcoreapp2.1\ApiCorePet.runtimeconfig.dev.json
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\bin\Release\netcoreapp2.1\ApiCorePet.dll
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\bin\Release\netcoreapp2.1\ApiCorePet.pdb
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.csprojAssemblyReference.cache
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.RazorAssemblyInfo.cache
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.RazorAssemblyInfo.cs
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.AssemblyInfo.cs
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.RazorTargetAssemblyInfo.cache
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.dll
+C:\Users\Rodrigo\source\repos\ApiCorePet\ApiCorePet\obj\Release\netcoreapp2.1\ApiCorePet.pdb

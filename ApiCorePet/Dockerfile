@@ -1,0 +1,19 @@
+FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM microsoft/dotnet:2.1-sdk AS build
+WORKDIR /src
+COPY ApiCorePet/ApiCorePet.csproj ApiCorePet/
+RUN dotnet restore ApiCorePet/ApiCorePet.csproj
+COPY . .
+WORKDIR /src/ApiCorePet
+RUN dotnet build ApiCorePet.csproj -c Release -o /app
+
+FROM build AS publish
+RUN dotnet publish ApiCorePet.csproj -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app .
+ENTRYPOINT ["dotnet", "ApiCorePet.dll"]
