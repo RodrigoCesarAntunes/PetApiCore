@@ -7,7 +7,7 @@ services:
   db:
     image:mysql:8.0.12
       - datafiles1:/var/lib/mysql
-      restart: always
+        restart: always
         
   apicorepet:
     image: ${DOCKER_REGISTRY}apicorepet
