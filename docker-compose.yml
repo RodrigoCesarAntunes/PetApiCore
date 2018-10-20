@@ -15,7 +15,7 @@ services:
       context: .
       dockerfile: ApiCorePet/Dockerfile
       depends_on:
-        - db
+        -db
       ports:
         -"8888:80"
         restart:always
