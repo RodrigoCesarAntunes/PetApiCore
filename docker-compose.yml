@@ -6,6 +6,8 @@ volumes:
 services:
   db:
     image: mysql:8.0.12
+    ports:
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD:"VetDB-435"
       - MYSQL_DATABASE:"veterinarioservice"
