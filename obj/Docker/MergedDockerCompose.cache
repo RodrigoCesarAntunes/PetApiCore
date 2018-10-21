@@ -14,7 +14,15 @@ services:
     - target: 80
     restart: always
   db:
-    image: mysql:8.0.12 - datafiles1:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE:"veterinarioservice": null
+      MYSQL_PASSWORD:"VetDB-435": null
+      MYSQL_ROOT_PASSWORD:"VetDB-435": null
+      MYSQL_USER:"root": null
+    image: mysql:8.0.12
+    ports:
+    - published: 3306
+      target: 3306
     restart: always
 version: '3.4'
 volumes:
