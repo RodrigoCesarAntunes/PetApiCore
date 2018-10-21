@@ -6,21 +6,22 @@ volumes:
 services:
   db:
     image: mysql:8.0.12
-    ports:
-      - "3306:3306"
+    volumes:
+      - datafiles:/var/lib/mysql
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD:"VetDB-435"
-      - MYSQL_DATABASE:"veterinarioservice"
-      - MYSQL_USER:"root"
-      - MYSQL_PASSWORD:"VetDB-435"
+      MYSQL_ROOT_PASSWORD: VetDB-435
+      MYSQL_DATABASE: veterinarioservice
+      MYSQL_USER: rodrigo
+      MYSQL_PASSWORD: VetDB-436
   apicorepet:
-    image: ${DOCKER_REGISTRY}apicorepet
     build:
       context: .
       dockerfile: ApiCorePet/Dockerfile
     depends_on:
-    - db
+       - db
     ports:
-    - "8888:80"
+      - "8888:80"
     restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development

@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>6e54a1aa-f4e6-44a4-8e12-388898212a5a</ProjectGuid>
+    <ProjectGuid>7f32458e-383d-4a31-85ab-ddf775b628c1</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/values</DockerServiceUrl>
     <DockerServiceName>apicorepet</DockerServiceName>
