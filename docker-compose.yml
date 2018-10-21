@@ -14,6 +14,8 @@ services:
       MYSQL_DATABASE: veterinarioservice
       MYSQL_USER: rodrigo
       MYSQL_PASSWORD: VetDB-436
+    ports:
+      - "3306:3306"
   apicorepet:
     build:
       context: .
