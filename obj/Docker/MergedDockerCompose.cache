@@ -7,7 +7,6 @@ services:
     - db
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-    image: apicorepet
     ports:
     - published: 8888
       target: 80
@@ -15,15 +14,17 @@ services:
     restart: always
   db:
     environment:
-      MYSQL_DATABASE:"veterinarioservice": null
-      MYSQL_PASSWORD:"VetDB-435": null
-      MYSQL_ROOT_PASSWORD:"VetDB-435": null
-      MYSQL_USER:"root": null
+      MYSQL_DATABASE: veterinarioservice
+      MYSQL_PASSWORD: VetDB-436
+      MYSQL_ROOT_PASSWORD: VetDB-435
+      MYSQL_USER: rodrigo
     image: mysql:8.0.12
     ports:
     - published: 3306
       target: 3306
     restart: always
+    volumes:
+    - datafiles:/var/lib/mysql:rw
 version: '3.4'
 volumes:
   datafiles: {}
