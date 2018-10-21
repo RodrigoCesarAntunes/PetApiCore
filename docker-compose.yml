@@ -24,6 +24,8 @@ services:
        - db
     ports:
       - "8888:80"
+    links:
+      - db
     restart: always
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
