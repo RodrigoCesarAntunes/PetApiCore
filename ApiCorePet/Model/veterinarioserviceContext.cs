@@ -39,7 +39,7 @@ namespace ApiCorePet.Model
             {
                 entity.HasKey(e => e.Email);
 
-                entity.ToTable("autenticacao");
+                entity.ToTable("Autenticacao");
 
                 entity.HasIndex(e => e.Id)
                     .HasName("ID")
@@ -61,7 +61,7 @@ namespace ApiCorePet.Model
             {
                 entity.HasKey(e => e.UsuarioEmail);
 
-                entity.ToTable("cliente_comercio");
+                entity.ToTable("Cliente_Comercio");
 
                 entity.HasIndex(e => e.Id)
                     .HasName("ID")
@@ -89,7 +89,7 @@ namespace ApiCorePet.Model
 
             modelBuilder.Entity<ClientePessoa>(entity =>
             {
-                entity.ToTable("cliente_pessoa");
+                entity.ToTable("Cliente_Pessoa");
 
                 entity.HasIndex(e => e.UsuarioEmail)
                     .HasName("Usuario_Email")
@@ -113,7 +113,7 @@ namespace ApiCorePet.Model
 
             modelBuilder.Entity<Consulta>(entity =>
             {
-                entity.ToTable("consulta");
+                entity.ToTable("Consulta");
 
                 entity.HasIndex(e => e.ClienteComercioEmail)
                     .HasName("Cliente_comercio_Email");
@@ -187,7 +187,7 @@ namespace ApiCorePet.Model
 
             modelBuilder.Entity<PetFotos>(entity =>
             {
-                entity.ToTable("pet_fotos");
+                entity.ToTable("Pet_fotos");
 
                 entity.HasIndex(e => e.PetId)
                     .HasName("Pet_id");
@@ -213,7 +213,7 @@ namespace ApiCorePet.Model
             {
                 entity.HasKey(e => e.PetId);
 
-                entity.ToTable("pets");
+                entity.ToTable("Pets");
 
                 entity.HasIndex(e => e.ClientePessoaEmail)
                     .HasName("Cliente_pessoa_Email");
@@ -253,7 +253,7 @@ namespace ApiCorePet.Model
 
             modelBuilder.Entity<Services>(entity =>
             {
-                entity.ToTable("services");
+                entity.ToTable("Services");
 
                 entity.HasIndex(e => e.ClienteComercioEmail)
                     .HasName("Cliente_Comercio_Email");
@@ -284,7 +284,7 @@ namespace ApiCorePet.Model
             {
                 entity.HasKey(e => e.Email);
 
-                entity.ToTable("usuario");
+                entity.ToTable("Usuario");
 
                 entity.HasIndex(e => e.Id)
                     .HasName("ID")
