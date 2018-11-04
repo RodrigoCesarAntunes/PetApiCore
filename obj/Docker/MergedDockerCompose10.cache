@@ -19,6 +19,8 @@ services:
         -x dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    links:
+    - db
     ports:
     - published: 8888
       target: 80

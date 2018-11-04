@@ -27,11 +27,17 @@ namespace ApiCorePet.Controllers
         [HttpGet]
         public IActionResult GetUsuario(string email, string Senha)
         {
-            if(ValidarUsuario.TestarSenha(Senha, email) == false)
+            try
             {
-                return new UnauthorizedResult();
+                if (ValidarUsuario.TestarSenha(Senha, email) == false)
+                {
+                    return new UnauthorizedResult();
+                }
             }
-
+            catch (System.NullReferenceException e)
+            {
+                return new NotFoundResult();
+            }
             Autenticacao aut = _context.Autenticacao.Find(email);
             List<Pets> pets = _context.Pets.Where(p => p.ClientePessoaEmail == email).ToList();
             ClientePessoa clientePessoa = _context.ClientePessoa.Where(c => c.UsuarioEmail == email).FirstOrDefault(); ;

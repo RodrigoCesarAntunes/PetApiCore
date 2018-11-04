@@ -35,6 +35,10 @@ namespace ApiCorePet.Controllers
                 System.Diagnostics.Debug.WriteLine(e.ToString());
                 throw;
             }
+            catch (System.NullReferenceException e)
+            {
+                throw;
+            }
         }
     }
 }
