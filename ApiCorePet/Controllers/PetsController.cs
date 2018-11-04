@@ -104,7 +104,7 @@ namespace ApiCorePet.Controllers
                 return BadRequest(ModelState);
             }
             pets.ClientePessoa = null;
-            
+            pets.ClientePessoaEmail = pets.ClientePessoa.Usuario.Autenticacao.Email;
             _context.Pets.Add(pets);
             try
             {
